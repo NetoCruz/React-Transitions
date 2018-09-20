@@ -1,0 +1,94 @@
+.App {
+  text-align: center;
+  background: grey;
+}
+
+.App-logo {
+  /*nimation: App-logo-spin infinite 20s linear;*/
+  /*animation: Change infinite 20s linear;*/
+  height: 80px;
+}
+
+.App-header {
+  background-color: #222;
+  height: 150px;
+  padding: 20px;
+  color: white;
+  animation: color  2s;
+
+}
+
+.App-title {
+  font-size: 1.5em;
+}
+
+.App-intro {
+  font-size: large;
+}
+
+
+/*@keyframes App-logo-spin {
+  from { transform: rotate(0deg); }
+  to { transform: rotate(360deg); }
+}*/
+@keyframes color{
+  0%{
+    background: #222;
+  }
+  100%{
+    background: white;
+  }
+}
+
+
+
+
+@keyframes Change{
+
+  0%{
+  opacity: 0;
+  }
+  25%{
+  opacity: 1;
+  }
+  50%{
+  opacity: 0;
+  }
+  75%{
+  opacity: 1;
+  }
+  90%{
+  opacity: 0;
+  }
+  100%{
+  opacity: 1;
+  }
+}
+
+.Change{
+
+}
+
+.Change-enter{
+/*estado inicial de entrada*/
+/*background: red;*/
+animation: Change 1s;
+}
+
+.Change-enter-active{
+  /*estado final de entrada*/
+  /*background: blue;
+  transition-duration: 1s;*/
+}
+
+.Change-leave{
+/*estado final de salida*/
+/*transform: translateY(0);*/
+animation: Change 1s;
+}
+.Change-leave-active{
+  /*estado final de salida*/
+  /*transition-duration: 1s;*/
+  /*transform: translateY(500px);*/
+}
+
